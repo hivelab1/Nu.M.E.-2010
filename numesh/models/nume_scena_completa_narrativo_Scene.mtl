@@ -1,0 +1,1377 @@
+# Blender3D MTL File: nume_scena_completa_narrativo.blend
+# Material Count: 125
+newmtl asinelli_nicchia_lightmap.017
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.213333 0.586667 0.163137
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_finestra_acu_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.677647 0.432941 0.072157
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_tegole_ril_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.810000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd lightmap
+
+
+newmtl ed45_fori_pontai_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_tegole_rilievo_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.500000 0.487079 0.455321
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_casatorre_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.389019
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_legno_travetti_lightmap.009
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.776467 0.142883
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_sottotetto_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.062745 0.285490 0.705882
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_tegole_rilievo_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.500000 0.487079 0.455321
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_int_05_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.109804 0.395294 0.272941
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_int_01_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.304833 0.377600
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_finestra_dav_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.715294 0.031373 0.536471
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_finestra_dav_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.486274 0.677647 0.222745
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_finestra_dav_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.683922 0.125490 0.624314
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_sottotetto_lightmap.012
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.142883 0.486300 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_int_02_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.530196 0.618039 0.439216
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl cappelletta_mattoni_lightmap.019
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.564706 0.062745 0.062745
+Ks 0.166897 0.166897 0.166897
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_int_02_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.696471 0.379608 0.207059
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_fori_pontai_lightmap.009
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_fori_pontai_lightmap.015
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_portone_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.577255 0.467451 0.549020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_base_pil_matt_lightmap.020
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.505098 0.144314 0.059608
+Ks 0.166897 0.166897 0.166897
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_finestra_acuto_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.536471 0.351373 0.075294
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_base_pil_pietra_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.326275 0.307451 0.307451
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl barile_brett_lightmap.014
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.307451 0.583529 0.605490
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_mattoni_lightmap.017
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.658824 0.078431 0.078431
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_fori_pontai_lightmap.017
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_int_02_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.664765 0.720290 0.733618
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_base_pietra_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.448627 0.448627 0.448627
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_mattoni_torri_lightmap.009
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.721569 0.608628 0.072157
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_sottotetto_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.142883 0.486300 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_tegole_rilievo_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.677647 0.084706 0.053333
+Ks 0.500000 0.487079 0.455321
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_tegole_rilievo_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.500000 0.487079 0.455321
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_int_04_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.091113 0.724775 0.225875
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl pannelli_info_03_scheda_palazzo_strazz
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.122353 0.138039 0.580392
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd scheda_palazzo_strazzaroli.jpg
+
+
+newmtl ed3_selciato_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.692477 0.480495 0.480495
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl pannelli_info_04_scheda_3torri.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.100392 0.683922 0.150588
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd scheda_3torri.jpg
+
+
+newmtl ed3_int_01_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.025098 0.730980 0.323137
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_fori_pontai_lightmap.018
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_int_03_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.233153 0.067072 0.727030
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_mattoni_torri_lightmap.015
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.097255 0.621176 0.269804
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_int_02_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.721569 0.445490 0.464314
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_legno_pilastri_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.426667 0.260392 0.072157
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_sottotetto_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.296000 0.448000 0.488000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl mezzeria
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.301176 0.087843 0.677647
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pavimento_bump.png
+
+
+newmtl ed7_portone_imp_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.467451 0.461176 0.021961
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_portone_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.709020 0.633726 0.633726
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_bronzo_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.658823 0.790588 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_sele_porta_lightmap.017
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.178824 0.122353 0.040784
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_finestra_ret_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.009412 0.138039 0.229020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl mattoni_pavimenta_lightmap.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.492549 0.119216 0.018824
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_int_03_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.696471 0.649412 0.257255
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_finestra_acuto_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.097255 0.690196 0.271050
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_porta_lightmap.018
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.693333 0.771765 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_int_04_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.009412 0.138039 0.229020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_int_02_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.335686 0.630588 0.699608
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_portone_imp_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.589804 0.257255 0.069020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl cappelletta_ferro_lightmap.019
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.715294 0.404706 0.047059
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_portone_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.320000 0.096000 0.144000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_casatorre_lightmap.009
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.389019
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_int_03_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.276078 0.542745 0.599216
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl cappelletta_croce_lightmap.019
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.589804 0.687059 0.122353
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl pannelli_info_01_scheda_cappella_croce
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.696471 0.683922 0.112941
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd scheda_cappella_croce.jpg
+
+
+newmtl ed3_int_05_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.523922 0.611765 0.436078
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_int_03_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.276078 0.542745 0.599216
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_casatorre_lightmap.018
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.389019
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_base_pil_pietra_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.448627 0.448627 0.448627
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl carretto_rad_lightmap.016
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.100392 0.467451 0.178824
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_legno_travetti_lightmap.020
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.776467 0.142883
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_legno_travetti_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.408000 0.608000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_legno_pilastri_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.655686 0.420392 0.266667
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_int_05_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.109804 0.395294 0.272941
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_legno_travetti_lightmap.015
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.776467 0.142883
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_base_pietra_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.558431 0.558431 0.558431
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_nicchia_lightmap.018
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.213333 0.586667 0.163137
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl pannelli_info_lat_fori_pontai.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd fori_pontai.jpg
+
+
+newmtl ed7_int_03_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.233153 0.067072 0.727030
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_acqua_aposa_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.028235 0.291765 0.690196
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_int_05_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.414118 0.570980 0.414118
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_cornice_lightmap.018
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.800000 0.671373
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_int_01_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.553017 0.085780 0.646465
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_finestra_acuto_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.520784 0.178824 0.589804
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl cappelletta_legno_lightmap.019
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.605490 0.247843 0.015686
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_finestra_ret_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.009412 0.138039 0.229020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_pavimento_mattoni_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.715294 0.272941 0.065882
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_int_01_lightmap.020
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.553017 0.085780 0.646465
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_finestra_dav_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.486274 0.677647 0.222745
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_cornice_lightmap.017
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.633725 0.793726 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_mattoni_lightmap.018
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.627451 0.483137 0.047059
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl barile_top_lightmap.014
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.536471 0.053333 0.053333
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_int_03_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.762353 0.586667 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_legno_travetti_lightmap.012
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.715294 0.103529 0.401569
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_blocchi_piet_lightmap.017
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.448627 0.448627 0.448627
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_base_pietra_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.448627 0.448627 0.448627
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_base_pil_pietra_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.470400 0.470400 0.470400
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl carretto_stangen_lightmap.016
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.178824 0.062745 0.621176
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_portone_imp_lightmap.013
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.467451 0.461176 0.021961
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_legno_travetti_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.776467 0.142883
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_int_04_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.649412 0.329412 0.178824
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_pietra_lightmap.018
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.533333 0.517647 0.517647
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_lato_lightmap.018
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.094118 0.470588 0.636863
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_finestra_acuto_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.677647 0.432941 0.072157
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl mezzeria_lightmap.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.301176 0.087843 0.677647
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_legno_pilastri_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.392157 0.153725 0.028235
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_legno_pilastri_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.304314 0.191373 0.100392
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_legno_pilastri_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.605490 0.247843 0.015686
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl carretto_stangen_smal_lightmap.016
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.294902 0.094118 0.094118
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl asinelli_sele_la_lightmap.017
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.203922 0.605490 0.414118
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6bis_sottotetto_lightmap.009
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.296000 0.448000 0.488000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl mezzeria_pavimento.png.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.301176 0.087843 0.677647
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pavimento.png
+
+
+newmtl ed7_int_04_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.091113 0.724775 0.225875
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl pannelli_info_02_scheda_piazza_porta_r
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.131765 0.454902 0.699608
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd scheda_piazza_porta_ravegnana.jpg
+
+
+newmtl cappelletta_marmo_lightmap.019
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl mattoni_pavimenta_lightmap.011
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.492549 0.119216 0.018824
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl garisenda_base_lightmap.018
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.166274 0.062745 0.668235
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_finestra_dav_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.486274 0.677647 0.222745
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl barile_ring_lightmap.014
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.633725 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_tegole_rilievo_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.810000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd lightmap
+
+
+newmtl ed2_bronzo_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.067072 0.618157 0.727030
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_legno_pilastri_lightmap.020
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.275729 0.179850 0.019447
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed7_sottotetto_lightmap.020
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.142883 0.486300 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed6_finestra_ret_lightmap.015
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.009412 0.138039 0.229020
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed2_portone_lightmap.006
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.138039 0.144314 0.040784
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed3_portone_lightmap.012
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.762353 0.737255 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+
+newmtl ed45_torre_lightmap.013
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.715294 0.426667
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lightmap
+
+

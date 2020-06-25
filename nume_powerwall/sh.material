@@ -1,0 +1,110 @@
+material redsh/sh
+{
+	technique
+	{
+		pass
+		{
+			vertex_program_ref shVP
+			{
+			}
+			fragment_program_ref shFP
+			{
+			}
+
+			texture_unit
+			{
+				texture_alias sh
+				texture garisenda0.0.fosh 3d 0 PF_FLOAT16_RGBA
+
+				//texture_filter none
+				//getex_address_mode clamp
+				tex_coord_set 0
+			}
+			texture_unit
+			{
+				texture_alias diffuse
+				texture rockbump.jpg
+				filtering anisotropic
+				tex_coord_set 1
+			}
+			texture_unit
+			{
+				texture_alias normalheight
+				texture rockbump_relaxedcone.tga
+				tex_coord_set 2
+			}
+			texture_unit
+			{
+				texture_alias muffa
+				texture rockbump_relaxedcone.tga
+				tex_coord_set 3
+			}
+
+		}
+	}
+}
+
+material redsh/sh_base
+{
+	// Hardware skinning techniique
+	technique
+	{
+		pass
+		{
+			vertex_program_ref shBaseVP
+			{
+			}
+			fragment_program_ref shBaseFP
+			{
+			}
+
+			texture_unit
+			{
+				texture_alias diffuse
+				texture Wagen_1.jpg
+				#filtering anisotropic
+				tex_coord_set 1
+			}
+			//texture_unit
+			//{
+			//	texture_alias normalheight
+			//	texture rockbump_relaxedcone.tga
+			//	tex_coord_set 2
+			//}
+			//texture_unit
+			//{
+		//		texture_alias muffa
+	//			texture blank.png
+	//			tex_coord_set 2
+	//		}
+		}
+	}
+}
+
+material browser
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+
+			texture_unit
+			{
+				texture browser.png
+				
+				
+				filtering anisotropic
+				max_anisotropy 16 
+
+				scale 1.0 1.0
+			}
+		}   
+	}
+}
+
+
+material browser : redsh/sh_base
+{
+	set_texture_alias diffuse rust.jpg
+}

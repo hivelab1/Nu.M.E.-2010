@@ -1,0 +1,43 @@
+
+material redsh/sh : Examples/BumpMapping/MultiLightSpecular
+{
+	technique
+	{
+		pass perlight
+		{
+			texture_unit normalmap
+			{
+				texture_alias normalheight 
+				texture rockbump_relaxedcone.tga
+				tex_coord_set 0
+			}
+		}
+		
+		// Decal pass
+		pass decal
+		{
+			texture_unit decalmap
+			{
+				texture_alias diffuse
+				texture blank.png
+				filtering anisotropic
+				tex_coord_set 0
+			}
+			
+		}
+		
+		pass diff
+		{
+			scene_blend dest_colour zero
+			texture_unit difftext
+			{
+				texture_alias muffa 
+				texture blank.png
+				filtering anisotropic
+				tex_coord_set 0
+			}
+		}
+	}
+}
+
+

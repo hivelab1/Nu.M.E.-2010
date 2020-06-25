@@ -1,0 +1,97 @@
+<scene formatVersion="1.0.0">
+  <nodes>
+    <node name="edificio_6">
+      <position x="-23.065481" y="18.398621" z="48.104431"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_6" meshFile="edificio_6.mesh"/>
+    </node>
+    <node name="pavimentazione">
+      <position x="15.905228" y="19.570757" z="1.814188"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="pavimentazione" meshFile="pavimentazione.mesh"/>
+    </node>
+    <node name="scheda01">
+      <position x="-26.469465" y="0.153210" z="12.157146"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="scheda01" meshFile="scheda01.mesh"/>
+    </node>
+    <node name="edificio_4_5">
+      <position x="24.448000" y="19.216999" z="59.981998"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_4_5" meshFile="edificio_4_5.mesh"/>
+    </node>
+    <node name="edificio6_bis">
+      <position x="-13.367000" y="-1.538000" z="12.959000"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio6_bis" meshFile="edificio6_bis.mesh"/>
+    </node>
+    <node name="edificio_7">
+      <position x="-34.628174" y="3.264493" z="-18.727089"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_7" meshFile="edificio_7.mesh"/>
+    </node>
+    <node name="oggettistica">
+      <position x="36.207077" y="-2.471057" z="14.572397"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="oggettistica" meshFile="oggettistica.mesh"/>
+    </node>
+    <node name="garisenda">
+      <position x="15.905225" y="19.570755" z="1.814188"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="garisenda" meshFile="garisenda.mesh"/>
+    </node>
+    <node name="edificio_1_2">
+      <position x="16.540001" y="4.416811" z="-40.995998"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_1_2" meshFile="edificio_1_2.mesh"/>
+    </node>
+    <node name="scheda02">
+      <position x="1.807051" y="0.153211" z="5.286258"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="scheda02" meshFile="scheda02.mesh"/>
+    </node>
+    <node name="finestre">
+      <position x="-6.091134" y="3.155946" z="19.449209"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="finestre" meshFile="finestre.mesh"/>
+    </node>
+    <node name="asinelli">
+      <position x="18.323002" y="61.838531" z="14.399385"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="asinelli" meshFile="asinelli.mesh"/>
+    </node>
+    <node name="cappelletta">
+      <position x="-13.367000" y="-1.592000" z="12.959000"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="cappelletta" meshFile="cappelletta.mesh"/>
+    </node>
+    <node name="edificio_3">
+      <position x="49.516640" y="4.207502" z="-4.449348"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_3" meshFile="edificio_3.mesh"/>
+    </node>
+  </nodes>
+  <externals>
+    <item type="material">
+      <file name="Scene.material"/>
+    </item>
+  </externals>
+  <environment>
+    <colourAmbient r="0.000000" g="0.000000" b="0.000000"/>
+    <colourBackground r="0.484992" g="0.643355" b="0.816115"/>
+  </environment>
+</scene>

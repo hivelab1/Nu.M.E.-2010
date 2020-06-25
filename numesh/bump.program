@@ -1,0 +1,21 @@
+
+vertex_program bump_vertex cg
+{
+    source bump_vertex.cg
+    entry_point main_vp
+    profiles vp40
+	
+	default_params
+	{
+		param_named_auto modelviewproj_matrix worldviewproj_matrix
+		param_named_auto modelview_matrix worldview_matrix
+	}
+}
+
+fragment_program bump_fragment cg
+{
+	source bump_fragment.cg
+	entry_point main_fp
+    profiles fp40
+}
+

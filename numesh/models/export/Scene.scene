@@ -1,0 +1,167 @@
+<scene formatVersion="1.0.0">
+  <nodes>
+    <node name="pavimentazione">
+      <position x="5.751801" y="-3.289949" z="13.391840"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="pavimentazione" meshFile="pavimentazione.mesh"/>
+    </node>
+    <node name="carri">
+      <position x="14.131943" y="-2.478459" z="25.526939"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="carri" meshFile="carri.mesh"/>
+    </node>
+    <node name="edificio6_bis">
+      <position x="-43.271709" y="7.894094" z="34.640930"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio6_bis" meshFile="edificio6_bis.mesh"/>
+    </node>
+    <node name="edificio_7">
+      <position x="-34.628174" y="3.014331" z="-18.727089"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_7" meshFile="edificio_7.mesh"/>
+    </node>
+    <node name="edificio_6">
+      <position x="-23.065481" y="18.398621" z="48.104431"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_6" meshFile="edificio_6.mesh"/>
+    </node>
+    <node name="Camera.001">
+      <position x="-3.535684" y="0.767139" z="12.645896"/>
+      <quaternion x="-0.070316" y="0.721069" z="0.063208" w="0.686382"/>
+      <scale x="2.000000" y="2.000000" z="2.000000"/>
+      <camera name="Camera.001" fov="37.849289" projectionType="perspective">
+        <clipping nearPlaneDist="0.100000" farPlaneDist="100.000000"/>
+      </camera>
+    </node>
+    <node name="Lamp">
+      <position x="-50.565834" y="123.082855" z="71.822784"/>
+      <quaternion x="-0.707107" y="0.000000" z="0.000000" w="0.707107"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <light name="Lamp.005" type="point">
+        <colourDiffuse r="2.786067" g="2.786067" b="2.786067"/>
+        <colourSpecular r="2.786067" g="2.786067" b="2.786067"/>
+        <lightAttenuation range="5000.0" constant="1.000000" linear="0.010000" quadratic="0.000000"/>
+      </light>
+    </node>
+    <node name="Camera.002">
+      <position x="8.504791" y="211.249969" z="6.712734"/>
+      <quaternion x="-0.707107" y="0.000000" z="0.000000" w="0.707107"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <camera name="Camera.002" fov="59.489763" projectionType="perspective">
+        <clipping nearPlaneDist="0.100000" farPlaneDist="1000.000000"/>
+      </camera>
+    </node>
+    <node name="pavimentazione_mezzer">
+      <position x="5.751801" y="-3.289949" z="13.391840"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="pavimentazione_mezzer" meshFile="pavimentazione_mezzer.mesh"/>
+    </node>
+    <node name="edificio_4_5">
+      <position x="24.448000" y="19.444349" z="59.981998"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_4_5" meshFile="edificio_4_5.mesh"/>
+    </node>
+    <node name="cappelletta">
+      <position x="-13.367000" y="-1.592000" z="12.959000"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="cappelletta" meshFile="cappelletta.mesh"/>
+    </node>
+    <node name="edificio_3">
+      <position x="49.516640" y="4.102520" z="-4.449348"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_3" meshFile="edificio_3.mesh"/>
+    </node>
+    <node name="barili">
+      <position x="-15.177092" y="-2.894390" z="16.232357"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="barili" meshFile="barili.mesh"/>
+    </node>
+    <node name="mezzeria">
+      <position x="4.879097" y="-3.278035" z="13.000582"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.300000" z="1.000000"/>
+      <entity name="mezzeria" meshFile="mezzeria.mesh"/>
+    </node>
+    <node name="asinelli">
+      <position x="18.323002" y="61.838531" z="14.399385"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="asinelli" meshFile="asinelli.mesh"/>
+    </node>
+    <node name="Camera.003">
+      <position x="-60.283684" y="61.030426" z="3.666307"/>
+      <quaternion x="-0.353553" y="-0.612372" z="-0.353553" w="0.612372"/>
+      <scale x="40.000000" y="40.099995" z="39.999996"/>
+      <camera name="Camera.003" fov="37.849289" projectionType="perspective">
+        <clipping nearPlaneDist="0.001000" farPlaneDist="1000.000000"/>
+      </camera>
+    </node>
+    <node name="garisenda">
+      <position x="13.284498" y="21.365532" z="2.355218"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="garisenda" meshFile="garisenda.mesh"/>
+    </node>
+    <node name="edificio_1_2">
+      <position x="16.540001" y="4.183345" z="-40.995998"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="edificio_1_2" meshFile="edificio_1_2.mesh"/>
+    </node>
+    <node name="scheda02">
+      <position x="1.807051" y="0.153211" z="5.286258"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="scheda02" meshFile="scheda02.mesh"/>
+    </node>
+    <node name="scheda01">
+      <position x="-26.469465" y="0.153210" z="12.157146"/>
+      <quaternion x="0.000000" y="0.000000" z="-0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="scheda01" meshFile="scheda01.mesh"/>
+    </node>
+    <node name="Lamp.001">
+      <position x="44.650234" y="87.993790" z="8.308501"/>
+      <quaternion x="-0.664463" y="0.241845" z="-0.241845" w="0.664463"/>
+      <scale x="5.000000" y="5.000000" z="5.000000"/>
+      <light name="Lamp.006" type="spotLight" castShadows="true">
+        <normal x="0.0" y="0.0" z="-1.0"/>
+        <colourDiffuse r="1.952569" g="1.952569" b="1.952569"/>
+        <colourSpecular r="1.952569" g="1.952569" b="1.952569"/>
+        <lightRange inner="41.190819" outer="41.190819" falloff="1.0"/>
+        <lightAttenuation range="40.000000" constant="1.000000" linear="0.050000" quadratic="0.000000"/>
+      </light>
+    </node>
+    <node name="Lamp.002">
+      <position x="-5.762741" y="70.274872" z="-41.849503"/>
+      <quaternion x="-0.881781" y="0.209420" z="-0.097654" w="0.411181"/>
+      <scale x="5.000000" y="5.000000" z="5.000000"/>
+      <light name="Lamp.007" type="spotLight" castShadows="true">
+        <normal x="0.0" y="0.0" z="-1.0"/>
+        <colourDiffuse r="2.071640" g="2.071640" b="2.071640"/>
+        <colourSpecular r="2.071640" g="2.071640" b="2.071640"/>
+        <lightRange inner="45.000000" outer="45.000000" falloff="1.0"/>
+        <lightAttenuation range="40.000000" constant="1.000000" linear="0.050000" quadratic="0.000000"/>
+      </light>
+    </node>
+  </nodes>
+  <externals>
+    <item type="material">
+      <file name="Scene.material"/>
+    </item>
+  </externals>
+  <environment>
+    <colourAmbient r="0.000000" g="0.000000" b="0.000000"/>
+    <colourBackground r="0.484992" g="0.643355" b="0.816115"/>
+  </environment>
+</scene>

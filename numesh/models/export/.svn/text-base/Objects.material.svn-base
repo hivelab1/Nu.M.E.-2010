@@ -1,0 +1,99 @@
+import * from "sh.material"
+
+material _Rad.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Stangen_Small.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _stangen.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Weiden.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Wood_Top.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Achse.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Wood_Front.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material _Bretter.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material holzwaagerecht.001 : redsh/sh_base
+{
+   set_texture_alias diffuse Wagen_1.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material top.001 : redsh/sh_base
+{
+   set_texture_alias diffuse PlanksNe.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material brett.001 : redsh/sh_base
+{
+   set_texture_alias diffuse PlanksNe.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+material ring.001 : redsh/sh_base
+{
+   set_texture_alias diffuse rust.jpg
+   set_texture_alias radiosityMap_y oggettistica.fosh
+
+}
+//----------------------
+
+

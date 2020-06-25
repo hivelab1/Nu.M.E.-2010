@@ -1,0 +1,1334 @@
+import * from "sh.material"
+
+material Sky
+{
+	receive_shadows off
+	technique Map#3
+	{
+		pass Map#4
+		{
+			lighting off
+			depth_check off
+
+			texture_unit Map#5
+			{
+				texture_alias Map#5
+				cubic_texture stormy_fr.jpg stormy_bk.jpg stormy_lf.jpg stormy_rt.jpg stormy_up.jpg stormy_dn.jpg separateUV
+				filtering linear linear linear
+			}
+		}
+
+	}
+}
+
+material asinelli_cornice : redsh/sh
+{
+   set_texture_alias normalheight garisenda_cornice_n.tga
+   set_texture_alias diffuse garisenda_cornice.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material asinelli_mattoni : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_asinelli.jpg
+}
+//----------------------
+
+
+material asinelli_blocchi_piet : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material asinelli_sele_la : redsh/sh
+{
+   set_texture_alias normalheight base_asinelli_n.tga
+   set_texture_alias diffuse base_asinelli.png
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material asinelli_sele_porta : redsh/sh
+{
+   set_texture_alias normalheight base_asinelli_porta.tga
+   set_texture_alias diffuse base_asinelli_porta.png
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material asinelli_nicchia : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material asinelli_fori_pontai : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_fori_pontai : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_nicchia : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_lato : redsh/sh
+{
+   set_texture_alias normalheight garisenda_sele_lato_n.tga
+   set_texture_alias diffuse garisenda_sele_lato.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_cornice : redsh/sh
+{
+   set_texture_alias normalheight garisenda_cornice_n.tga
+   set_texture_alias diffuse garisenda_cornice.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_base : redsh/sh
+{
+   set_texture_alias normalheight garisenda_base_n.tga
+   set_texture_alias diffuse garisenda_base.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_porta : redsh/sh
+{
+   set_texture_alias normalheight garisenda_porta_n.tga
+   set_texture_alias diffuse garisenda_porta.jpg
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material garisenda_mattoni : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_torri.jpg
+}
+//----------------------
+
+
+material garisenda_casatorre : redsh/sh
+{
+   set_texture_alias normalheight porta_casatorre_n.png
+   set_texture_alias diffuse porta_casatorre.png
+   set_texture_alias muffa blank.png
+}
+//----------------------
+
+
+material mezzeria : redsh/sh
+{
+   set_texture_alias normalheight pavimento_bump.png
+   set_texture_alias diffuse pavimento.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh mezzeria.fosh
+
+}
+//----------------------
+
+material mattoni_pavimenta : redsh/sh
+{
+   set_texture_alias normalheight pavimento_bump.png
+   set_texture_alias diffuse pavimento.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh pavimentazione.fosh
+
+}
+//----------------------
+
+
+
+material ed6_fori_pontai : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6bis_casatorre : redsh/sh
+{
+   set_texture_alias normalheight porta_casatorre_n.png
+   set_texture_alias diffuse porta_casatorre.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+
+
+material ed6bis_fori_pontai : redsh/sh
+{
+   set_texture_alias normalheight  blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+
+material ed6bis_finestra_dav : redsh/sh
+{
+   set_texture_alias normalheight finestra_davanzale_n.png
+   set_texture_alias diffuse finestra_davanzale.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+
+material ed6bis_portone_imp : redsh/sh
+{
+   set_texture_alias normalheight portone_importante_n.png
+   set_texture_alias diffuse portone_importante.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+
+material ed6bis_finestra_acuto : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+
+
+material ed6bis_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight  blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_tegole_ril : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_int_05 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_int_03 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa stillicidio.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_mattoni_torri : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_int_04 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_base_pil_matt : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_acqua_aposa : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse acqua_aposa.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material ed6bis_base_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio6_bis.fosh
+
+}
+//----------------------
+
+material cappelletta_mattoni : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh cappelletta.fosh
+
+}
+//----------------------
+
+
+material cappelletta_ferro : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse ferro.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh cappelletta.fosh
+
+}
+//----------------------
+
+
+material cappelletta_legno : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh cappelletta.fosh
+
+}
+//----------------------
+
+
+material cappelletta_croce : redsh/sh
+{
+   set_texture_alias normalheight croce_n.jpg
+   set_texture_alias diffuse croce.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh cappelletta.fosh
+
+}
+//----------------------
+
+material cappelletta_marmo : redsh/sh
+{
+   set_texture_alias normalheight marmo.jpg
+   set_texture_alias diffuse blank.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh cappelletta.fosh
+
+}
+//----------------------
+
+
+material ed7_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+material ed7_finestra_dav : redsh/sh
+{
+   set_texture_alias normalheight finestra_davanzale_n.png
+   set_texture_alias diffuse finestra_davanzale.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_finestra_acuto : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+material ed7_portone : redsh/sh
+{
+   set_texture_alias normalheight portone_scrostato_n.png
+   set_texture_alias diffuse portone_scrostato.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+material ed7_finestra_ret : redsh/sh
+{
+   set_texture_alias normalheight finestra_rettangolare_n.png
+   set_texture_alias diffuse finestra_rettangolare.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+
+material ed7_portone_imp : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse portone_importante.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+material ed7_int_02 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_aragosta.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_int_03 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa stillicidio.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_verde.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight tavolato2.jpg
+   set_texture_alias diffuse blank.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_int_04 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_base_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_tegole_rilievo : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_int_05 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+material ed7_base_pil_matt : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_7.fosh
+
+}
+//----------------------
+
+
+material ed45_casatorre : redsh/sh
+{
+   set_texture_alias normalheight porta_casatorre_n.png
+   set_texture_alias diffuse porta_casatorre.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_tegole_rilievo : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_verde.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_int_03 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa stillicidio.jpg
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_int_04 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_torre : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_asinelli.jpg
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_base_pil_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_base_pil_matt : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+
+
+material ed45_int_02 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_fori_pontai : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse fori_pontai.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+
+
+material ed45_finestra_dav : redsh/sh
+{
+   set_texture_alias normalheight finestra_davanzale_n.png
+   set_texture_alias diffuse finestra_davanzale.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+material ed45_finestra_acu : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+
+material ed45_portone : redsh/sh
+{
+   set_texture_alias normalheight portone_scrostato_n.png
+   set_texture_alias diffuse portone_scrostato.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+
+
+
+
+material ed45_portone_imp : redsh/sh
+{
+   set_texture_alias normalheight portone_importante_n.png
+   set_texture_alias diffuse portone_importante.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+
+
+
+material ed45_tegole : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse tegole.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+
+}
+//----------------------
+
+material ed3_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_base_pil_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed3_finestra_ret : redsh/sh
+{
+   set_texture_alias normalheight finestra_rettangolare_n.png
+   set_texture_alias diffuse finestra_rettangolare.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed3_portone : redsh/sh
+{
+   set_texture_alias normalheight portone_scrostato_n.png
+   set_texture_alias diffuse portone_scrostato.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed3_finestra_acuto : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+
+material ed3_tegole_rilievo : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_bronzo : redsh/sh
+{
+   set_texture_alias normalheight campanile_bronzo_n.tga
+   set_texture_alias diffuse campanile_bronzo.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_pavimento_mattoni : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_asinelli.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+
+
+material ed3_finestra_acuto : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_4_5.fosh
+
+}
+//----------------------
+
+
+
+
+
+material ed3_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed3_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_verde.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_int_02 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_aragosta.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed3_int_03: redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa stillicidio.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_int_05 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_int_04 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+material ed3_selciato : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse selciato.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_3.fosh
+
+}
+//----------------------
+
+
+material ed6_finestra_dav : redsh/sh
+{
+   set_texture_alias normalheight finestra_davanzale_n.png
+   set_texture_alias diffuse finestra_davanzale.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_finestra_acuto : redsh/sh
+{
+   set_texture_alias normalheight finestra_sesto_acuto_n.png
+   set_texture_alias diffuse finestra_sesto_acuto.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_portone : redsh/sh
+{
+   set_texture_alias normalheight portone_scrostato_n.png
+   set_texture_alias diffuse portone_scrostato.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_finestra_ret : redsh/sh
+{
+   set_texture_alias normalheight finestra_rettangolare_n.png
+   set_texture_alias diffuse finestra_rettangolare.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_tegole_rilievo : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_int_05 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_int_03 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa stillicidio.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_mattoni_torri : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa muffa_torri.jpg
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_base_pil_matt : redsh/sh
+{
+   set_texture_alias normalheight torri_n.tga
+   set_texture_alias diffuse torri.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_base_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+material ed6_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+material ed6_int_04 : redsh/sh
+{
+   set_texture_alias normalheight blank.png 
+   set_texture_alias diffuse intonaco_spagnolo.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+
+material ed6_int_02 : redsh/sh
+{
+   set_texture_alias normalheight blank.png 
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+
+material ed6_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight blank.png 
+   set_texture_alias diffuse travetti.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_6.fosh
+
+}
+//----------------------
+
+
+
+material ed2_finestra_dav : redsh/sh
+{
+   set_texture_alias normalheight finestra_davanzale_n.png
+   set_texture_alias diffuse finestra_davanzale.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+
+material ed2_portone : redsh/sh
+{
+   set_texture_alias normalheight portone_scrostato_n.png
+   set_texture_alias diffuse portone_scrostato.png
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+
+material ed2_legno_pilastri : redsh/sh
+{
+   set_texture_alias normalheight legno_travi_n.tga
+   set_texture_alias diffuse legno_travi.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_tegole_rilievo : redsh/sh
+{
+   set_texture_alias normalheight tegole_pulite_n.tga
+   set_texture_alias diffuse tegole_pulite.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_legno_travetti : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse tavolato2.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_int_02 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_beige.jpg
+   set_texture_alias muffa muffa_intonaco.jpg
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_int_01 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_giallo.jpg
+   set_texture_alias muffa muffa_cornicioni.jpg
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_int_03 : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse intonaco_aragosta.jpg
+   set_texture_alias muffa stillicidio.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_bronzo : redsh/sh
+{
+   set_texture_alias normalheight campanile_bronzo_n.tga
+   set_texture_alias diffuse campanile_bronzo.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_base_pil_pietra : redsh/sh
+{
+   set_texture_alias normalheight pietra_01_n.tga
+   set_texture_alias diffuse pietra_01.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+material ed2_sottotetto : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse tavolato2.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh edificio_1_2.fosh
+
+}
+//----------------------
+
+
+
+material barile_top : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse barile.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh barili.fosh
+
+}
+//----------------------
+
+material barile_brett : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse barile.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh barili.fosh
+
+}
+//----------------------
+
+
+material barile_ring : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse metallo.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh barili.fosh
+
+}
+//----------------------
+
+material carretto_rad : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse carretto.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh carri.fosh
+	
+
+}
+//----------------------
+
+material carretto_stangen : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse carretto.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh carri.fosh
+
+}
+//----------------------
+
+
+material carretto_stangen_smal : redsh/sh
+{
+   set_texture_alias normalheight blank.png
+   set_texture_alias diffuse carretto.jpg
+   set_texture_alias muffa blank.png
+   //set_texture_alias sh carri.fosh  
+
+}
+//----------------------
+
+
+
+
+
+
+
+

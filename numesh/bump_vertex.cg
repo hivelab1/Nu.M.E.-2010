@@ -1,0 +1,76 @@
+#define NUM_FUNCTIONS 36
+#define NUM_FUNCTIONS_BY_4 9
+#ifndef USE_NUM_FUNCTIONS
+#define USE_NUM_FUNCTIONS 36
+#endif
+
+#define M_PI 3.14159265358979323846
+
+struct v2fConnector
+{
+	float4 hpos		: POSITION;
+	float3 uv0		: TEXCOORD0;
+	float2 uv_bake	: TEXCOORD1;
+
+	float3 tangent  : TEXCOORD2;
+	float3 binormal : TEXCOORD3;
+	float3 normal   : TEXCOORD4;
+	
+	float3 eye  	: TEXCOORD5;
+	float3 vpos 	: TEXCOORD6;
+};
+
+struct a2v 
+{
+	  float4 pos       	: POSITION;
+	  float3 normal    	: NORMAL;
+	  float2 uv0  		: TEXCOORD0;
+	  float2 uv1  		: TEXCOORD1;
+	  float3 tangent   	: TANGENT0;
+};
+
+v2fConnector main_vp( a2v IN,
+	uniform float4x4 modelviewproj_matrix,
+	uniform float4x4 modelview_matrix
+)
+{
+	v2fConnector OUT;
+
+	float4 pos=float4(IN.pos.x,IN.pos.y,IN.pos.z,1.0);
+
+	OUT.hpos=mul(modelviewproj_matrix,pos);
+	OUT.uv_bake=IN.uv1.xy;
+	
+	IN.tangent = IN.normal;
+	
+	float swp = IN.tangent.x;
+	IN.tangent.x = IN.tangent.z;
+	IN.tangent.z = swp;
+
+	float3x3 modelviewrot;
+	modelviewrot[0]=modelview_matrix[0].xyz;
+	modelviewrot[1]=modelview_matrix[1].xyz;
+	modelviewrot[2]=modelview_matrix[2].xyz;
+
+	float3 binormal1 = cross(IN.tangent, IN.normal);
+
+	float3 tangent=mul(modelviewrot,IN.tangent);
+	float3 binormal=mul(modelviewrot,binormal1);
+	float3 normal=mul(modelviewrot,IN.normal);
+
+	float3x3 tangentspace=float3x3(tangent,binormal,normal);
+
+	float3 vpos=mul(modelview_matrix,pos).xyz;
+
+	OUT.eye.xyz=mul(tangentspace,vpos);
+
+	OUT.tangent.xyz = IN.tangent;
+	OUT.binormal = binormal1;
+	OUT.normal.xyz = IN.normal;
+	OUT.vpos.xyz = vpos;
+
+	OUT.uv0.xy = IN.uv0.xy;
+	OUT.uv0.z = OUT.hpos.z;
+
+	return OUT;
+}

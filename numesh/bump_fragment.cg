@@ -1,0 +1,150 @@
+
+
+#define NUM_FUNCTIONS 36
+#define NUM_FUNCTIONS_BY_4 9
+#ifndef USE_NUM_FUNCTIONS
+#define USE_NUM_FUNCTIONS 36
+#endif
+
+#define M_PI 3.14159265358979323846
+
+struct v2fConnector
+{
+	float4 hpos		: POSITION;
+	float3 uv0		: TEXCOORD0;
+	float2 uv_bake	: TEXCOORD1;
+
+	float3 tangent  : TEXCOORD2;
+	float3 binormal : TEXCOORD3;
+	float3 normal   : TEXCOORD4;
+	
+	float3 eye  	: TEXCOORD5;
+	float3 vpos 	: TEXCOORD6;
+};
+
+
+void setup_ray(v2fConnector IN,out float3 p,out float3 v)
+{
+	p = float3(IN.uv0.xy,0);
+	v = normalize(IN.eye.xyz);
+	v.z = abs(v.z);
+
+	float db = 1.0-v.z; db*=db; db*=db; db=1.0-db*db;
+	v.xy *= db;
+	v.xy *= 0.02;
+}
+
+void ray_intersect_relaxedcone(
+	sampler2D relaxedcone_relief_map,
+	inout float3 p,
+	inout float3 v)
+{
+	const int cone_steps=15;//15
+	const int binary_steps=8;//8
+	
+	float3 p0 = p;
+
+	v /= v.z;
+	
+	float dist = length(v.xy);
+
+	for( int i=0;i<cone_steps;i++ )
+	{
+		float4 tex = tex2D(relaxedcone_relief_map, p.xy);
+
+		float height = saturate(tex.w - p.z);
+		
+		float cone_ratio = tex.z;
+		
+		p += v * (cone_ratio * height / (dist + cone_ratio));
+	}
+
+	v *= p.z*0.5;
+	p = p0 + v;
+
+	for( int i=0;i<binary_steps;i++ )
+	{
+		float4 tex = tex2D(relaxedcone_relief_map, p.xy);
+		v *= 0.5;
+		if (p.z<tex.w)
+			p+=v;
+		else
+			p-=v;
+	}
+}
+
+
+void main_fp(v2fConnector v2f,
+	uniform sampler2D tex_diffuse : register(s1),
+	uniform sampler2D tex_normalheight : register(s2),
+	uniform sampler2D tex_muffa : register(s3),
+
+	uniform float3 derived_ambient_light_colour ,
+	uniform float3 light_dir,
+	out float4 oColor : COLOR,
+
+	uniform float4 r_light_sh[NUM_FUNCTIONS_BY_4],
+	uniform float4 g_light_sh[NUM_FUNCTIONS_BY_4],
+	uniform float4 b_light_sh[NUM_FUNCTIONS_BY_4]
+)
+{
+	float3 p,v;
+	
+	setup_ray(v2f,p,v);
+	ray_intersect_relaxedcone(tex_normalheight,p,v);//, light, self_shadowing);
+
+	float3 normal_ts = tex2D(tex_normalheight, p.xy);
+	normal_ts.z = sqrt(1.0-dot(normal_ts.xy, normal_ts.xy));
+	float4 albedo = tex2D(tex_diffuse, p.xy) * tex2D(tex_muffa, p.xy);
+oColor=albedo;
+return;
+
+	normal_ts = normalize(normal_ts);
+
+	float3 normal_ws = normal_ts.x * v2f.tangent + normal_ts.y * v2f.binormal + normal_ts.z * v2f.normal;
+
+	float z = normal_ws.z;
+	normal_ws.z = normal_ws.y;
+	normal_ws.y = z;
+	normal_ws.x = -normal_ws.x;
+
+	float red = 0.0;
+	float green = 0.0;
+	float blue = 0.0;
+
+	float ylm[9];
+	ylm[0]=1.0/sqrt(4.0*M_PI);
+
+	ylm[1]=sqrt(3.0/(4.0*M_PI))*normal_ws.y;
+	ylm[2]=sqrt(3.0/(4.0*M_PI))*normal_ws.z;
+	ylm[3]=sqrt(3.0/(4.0*M_PI))*normal_ws.x;
+
+	ylm[4]= sqrt(15.0/(4.0*M_PI)) * (normal_ws.y * normal_ws.x);
+	ylm[5]= sqrt(15.0/(4.0*M_PI)) * (normal_ws.z * normal_ws.y);
+	ylm[6]= sqrt(5.0/(16.0*M_PI)) * (2.0 * normal_ws.z * normal_ws.z - normal_ws.x*normal_ws.x - normal_ws.y*normal_ws.y);
+	ylm[7]= sqrt(15.0/(4.0*M_PI)) * (normal_ws.x * normal_ws.z);
+	ylm[8]= sqrt(15.0/(4.0*M_PI)) * (normal_ws.x * normal_ws.x - normal_ws.y * normal_ws.y);
+
+	float3 accessibility = 0.0;
+
+	accessibility += ylm[0]*float3(r_light_sh[0].r, g_light_sh[0].r, b_light_sh[0].r);
+	accessibility += ylm[1]*float3(r_light_sh[0].g, g_light_sh[0].g, b_light_sh[0].g);
+	accessibility += ylm[2]*float3(r_light_sh[0].b, g_light_sh[0].b, b_light_sh[0].b);
+	accessibility += ylm[3]*float3(r_light_sh[0].a, g_light_sh[0].a, b_light_sh[0].a);
+
+	accessibility += ylm[4]*float3(r_light_sh[1].r, g_light_sh[1].r, b_light_sh[1].r);
+	accessibility += ylm[5]*float3(r_light_sh[1].g, g_light_sh[1].g, b_light_sh[1].g);
+	accessibility += ylm[6]*float3(r_light_sh[1].b, g_light_sh[1].b, b_light_sh[1].b);
+	accessibility += ylm[7]*float3(r_light_sh[1].a, g_light_sh[1].a, b_light_sh[1].a);
+	accessibility += ylm[8]*float3(r_light_sh[2].r, g_light_sh[2].r, b_light_sh[2].r);
+
+	for(int i=0; i<USE_NUM_FUNCTIONS/4; i++)
+	{
+		red   += r_light_sh[i];
+		green += g_light_sh[i];
+		blue  += b_light_sh[i];
+	}
+
+	float3 light  = float3(red, green, blue);
+	oColor = albedo*float4(1.2*light+2*(accessibility),1);
+}

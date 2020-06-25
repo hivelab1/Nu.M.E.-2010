@@ -1,0 +1,2375 @@
+material Sky
+{
+	receive_shadows off
+	technique Map#3
+	{
+		pass Map#4
+		{
+			lighting off
+			depth_check off
+
+			texture_unit Map#5
+			{
+				texture_alias Map#5
+				cubic_texture stormy_fr.jpg stormy_bk.jpg stormy_lf.jpg stormy_rt.jpg stormy_up.jpg stormy_dn.jpg separateUV
+				filtering linear linear linear
+			}
+		}
+
+	}
+
+}
+
+
+
+material ed2_int_03/SOLID/TEX/stillicidio.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.291442 0.083840 0.908788
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.png
+			}
+		}
+	}
+}
+material ed7_portone_imp/SOLID/TEX/portone_importante.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.584314 0.576471 0.027451
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material cappelletta_mattoni/SOLID/TEX/marmo.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.705882 0.078431 0.078431
+			specular 0.166897 0.166897 0.166897 12.500000
+			texture_unit
+			{
+				texture marmo.jpg
+			}
+		}
+	}
+}
+material ed6_legno_travetti/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.970583 0.178604
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material ed6_int_02/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.662745 0.772549 0.549020
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed6_mattoni_torri/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.121569 0.776471 0.337255
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material asinelli_fori_pontai/SOLID/TEX/lightmap
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture lightmap
+			}
+		}
+	}
+}
+material cappelletta_marmo/SOLID/TEX/marmo.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 1.000000 1.000000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture marmo.jpg
+			}
+		}
+	}
+}
+material ed45_torre/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.800000 0.894118 0.533333
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed7_finestra_acuto/SOLID/TEX/finestra_sesto_acuto.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.670588 0.439216 0.094118
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed7_sottotetto/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.178604 0.607875 1.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed6bis_legno_travetti/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.970583 0.178604
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material garisenda_porta/SOLID/TEX/garisenda_porta.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.866667 0.964706 0.000000
+			specular 0.500000 0.500000 0.500000 1.250000
+			texture_unit
+			{
+				texture garisenda_porta.jpg
+			}
+		}
+	}
+}
+material cappelletta_legno/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.756863 0.309804 0.019608
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed7_tegole_rilievo/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed2_int_01/SOLID/TEX/muffa_cornicioni.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.381041 0.472000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material asinelli_sele_la/ALPHA/TEX/base_asinelli.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.254902 0.756863 0.517647
+			specular 0.500000 0.500000 0.500000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture base_asinelli.png
+			}
+		}
+	}
+}
+material ed3_int_03/SOLID/TEX/stillicidio.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.jpg
+			}
+		}
+	}
+}
+material cappelletta_mattoni/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.705882 0.078431 0.078431
+			specular 0.166897 0.166897 0.166897 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed6bis_sottotetto/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed6_mattoni_torri/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.121569 0.776471 0.337255
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed6bis_acqua_aposa/SOLID/TEX/acqua_aposa.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.035294 0.364706 0.862745
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture acqua_aposa.jpg
+			}
+		}
+	}
+}
+material mezzeria/SOLID/TEX/pavimento.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.376470 0.109804 0.847059
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+}
+material ed6_finestra_ret/SOLID/TEX/finestra_rettangolare.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.011765 0.172549 0.286275
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material ed7_finestra_dav/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6_int_03/SOLID/TEX/stillicidio.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.345098 0.678431 0.749020
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.png
+			}
+		}
+	}
+}
+material ed6bis_tegole_ril/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed7_int_01/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.691271 0.107225 0.808081
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed6bis_int_03/SOLID/TEX/stillicidio.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.345098 0.678431 0.749020
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.png
+			}
+		}
+	}
+}
+material ed3_sottotetto/SOLID/TEX/tavolato2.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed6bis_int_04/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.811765 0.411765 0.223529
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material asinelli_fori_pontai/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material ed3_tegole_rilievo/SOLID/TEX/tegole_pulite.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed3_bronzo/SOLID/TEX/campanile_bronzo.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+}
+material ed3_int_04/SOLID/TEX/muffa_intonaco.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material cappelletta_mattoni/SOLID/TEX/ferro.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.705882 0.078431 0.078431
+			specular 0.166897 0.166897 0.166897 12.500000
+			texture_unit
+			{
+				texture ferro.jpg
+			}
+		}
+	}
+}
+material ed45_portone_imp/SOLID/TEX/portone_importante.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.584314 0.576471 0.027451
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material ed6bis_fori_pontai/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material carretto_rad/SOLID/TEX/carretto.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture carretto.jpg
+			}
+		}
+	}
+}
+material ed6bis_base_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed7_int_03/SOLID/TEX/stillicidio.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.291442 0.083840 0.908788
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.png
+			}
+		}
+	}
+}
+material ed6_mattoni_torri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.121569 0.776471 0.337255
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6_fori_pontai/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material garisenda_mattoni/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.784314 0.603922 0.058824
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material asinelli_blocchi_piet/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed3_legno_pilastri/SOLID/TEX/legno_travi.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material carretto_stangen/SOLID/TEX/carretto.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture carretto.jpg
+			}
+		}
+	}
+}
+material ed7_int_02/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.419608 0.788235 0.874510
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed6bis_finestra_dav/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed2_finestra_dav/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.894118 0.039216 0.670588
+			specular 0.000000 0.000000 0.000000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6bis_fori_pontai/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed45_fori_pontai/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material ed3_base_pil_pietra/SOLID/TEX/pietra_01.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed3_selciato/SOLID/TEX/selciato.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture selciato.jpg
+			}
+		}
+	}
+}
+material pannelli_info_lat/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material ed3_int_02/SOLID/TEX/muffa_intonaco.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed7_base_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.698039 0.698039 0.698039
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed2_sottotetto/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.078431 0.356863 0.882353
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed2_tegole_rilievo/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed45_int_01/SOLID/TEX/muffa_cornicioni.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.691271 0.107225 0.808081
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material ed6bis_fori_pontai/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material ed6_portone/SOLID/TEX/portone_scrostato.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.886275 0.792157 0.792157
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed6bis_finestra_acuto/SOLID/TEX/finestra_sesto_acuto.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.121569 0.862745 0.338813
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed3_finestra_ret/SOLID/TEX/finestra_rettangolare.png/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material ed45_sottotetto/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.178604 0.607875 1.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed2_finestra_dav/SOLID/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.894118 0.039216 0.670588
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6bis_base_pietra/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed6_legno_pilastri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.756863 0.309804 0.019608
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed45_legno_travetti/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.970583 0.178604
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material ed6bis_portone_imp/SOLID/TEX/portone_importante.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.737255 0.321569 0.086275
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material ed45_finestra_dav/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.854902 0.156863 0.780392
+			specular 0.000000 0.000000 0.000000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed45_int_04/SOLID/TEX/muffa_cornicioni.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.113891 0.905969 0.282344
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material ed6_finestra_acuto/SOLID/TEX/finestra_sesto_acuto.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.847059 0.541177 0.090196
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed6bis_base_pietra/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed45_tegole_rilievo/SOLID/TEX/tegole.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole.jpg
+			}
+		}
+	}
+}
+material asinelli_mattoni/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.823529 0.098039 0.098039
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material asinelli_cornice/SOLID/TEX/garisenda_cornice.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.792157 0.992157 0.000000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+}
+material ed3_tegole_rilievo/SOLID/TEX/tegole.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole.jpg
+			}
+		}
+	}
+}
+material cappelletta_legno/SOLID/TEX/marmo.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.756863 0.309804 0.019608
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture marmo.jpg
+			}
+		}
+	}
+}
+material ed6bis_finestra_dav/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed45_finestra_dav/SOLID/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.854902 0.156863 0.780392
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed3_base_pil_pietra/SOLID/TEX/legno_travi.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed2_bronzo/SOLID/TEX/campanile_bronzo.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.083840 0.772696 0.908788
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+}
+material ed7_int_01/SOLID/TEX/muffa_cornicioni.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.691271 0.107225 0.808081
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material ed45_portone/SOLID/TEX/portone_scrostato.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.721569 0.584314 0.686275
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material asinelli_sele_porta/ALPHA/TEX/base_asinelli_porta.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.223529 0.152941 0.050980
+			specular 0.500000 0.500000 0.500000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture base_asinelli_porta.png
+			}
+		}
+	}
+}
+material mezzeria/ALPHA/TEX/pavimento.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.376470 0.109804 0.847059
+			specular 0.500000 0.500000 0.500000 12.500000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+}
+material ed6bis_sottotetto/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed2_legno_travetti/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.510000 0.760000 0.640000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material carretto_stangen_smal/SOLID/TEX/carretto.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture carretto.jpg
+			}
+		}
+	}
+}
+material ed7_legno_travetti/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.970583 0.178604
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6bis_finestra_dav/SOLID/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material garisenda_base/SOLID/TEX/garisenda_base.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.207843 0.078431 0.835294
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture garisenda_base.jpg
+			}
+		}
+	}
+}
+material pannelli_info_04/SOLID/TEX/scheda_3torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.125490 0.854902 0.188235
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture scheda_3torri.jpg
+			}
+		}
+	}
+}
+material ed6bis_casatorre/SOLID/TEX/porta_casatorre.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.486274
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+}
+material ed7_portone/SOLID/TEX/portone_scrostato.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.400000 0.120000 0.180000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material pannelli_info_01/SOLID/TEX/scheda_cappella_croce.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.870588 0.854902 0.141176
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture scheda_cappella_croce.jpg
+			}
+		}
+	}
+}
+material ed3_int_01/SOLID/TEX/muffa_cornicioni.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material barile_top/SOLID/TEX/barile.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.670588 0.066667 0.066667
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture barile.jpg
+			}
+		}
+	}
+}
+material ed6_finestra_dav/SOLID/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed45_int_03/SOLID/TEX/stillicidio.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.952941 0.733333 0.000000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture stillicidio.jpg
+			}
+		}
+	}
+}
+material garisenda_cornice/SOLID/TEX/garisenda_cornice.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 1.000000 0.839216
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+}
+material ed2_base_pil_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.588000 0.588000 0.588000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed7_int_01/ALPHA/TEX/muffa_cornicioni.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.691271 0.107225 0.808081
+			specular 0.500000 0.500000 0.500000 12.500000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+			}
+		}
+	}
+}
+material ed6_sottotetto/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material mattoni_pavimenta/SOLID/TEX/pavimento.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.615686 0.149020 0.023529
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+}
+material cappelletta_ferro/SOLID/TEX/ferro.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.894118 0.505882 0.058824
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture ferro.jpg
+			}
+		}
+	}
+}
+material ed7_legno_pilastri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.344661 0.224813 0.024308
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material garisenda_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.666667 0.647059 0.647059
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material barile_brett/SOLID/TEX/barile.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.384314 0.729412 0.756863
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture barile.jpg
+			}
+		}
+	}
+}
+material cappelletta_croce/SOLID/TEX/croce.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.737255 0.858824 0.152941
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture croce.jpg
+			}
+		}
+	}
+}
+material garisenda_lato/SOLID/TEX/garisenda_sele_lato.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.117647 0.588235 0.796078
+			specular 0.500000 0.500000 0.500000 1.250000
+			texture_unit
+			{
+				texture garisenda_sele_lato.jpg
+			}
+		}
+	}
+}
+material ed6_tegole_rilievo/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed2_portone/SOLID/TEX/portone_scrostato.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.172549 0.180392 0.050980
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed7_finestra_dav/SOLID/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6bis_mattoni_torri/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.901961 0.760784 0.090196
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed3_finestra_acuto/SOLID/TEX/finestra_sesto_acuto.png/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed3_portone/SOLID/TEX/portone_scrostato.png/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed45_tegole_rilievo/SOLID/TEX/tegole_pulite.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.000000
+			specular 0.500000 0.487079 0.455321 1.250000
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed6bis_legno_pilastri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.819608 0.525490 0.333333
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed7_int_05/SOLID/TEX/muffa_torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.517647 0.713726 0.517647
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed6_legno_pilastri/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.756863 0.309804 0.019608
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material garisenda_fori_pontai/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.000000 0.000000 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material mattoni_pavimenta/ALPHA/TEX/pavimento.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.615686 0.149020 0.023529
+			specular 0.500000 0.500000 0.500000 12.500000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+}
+material ed7_legno_travetti/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.970583 0.178604
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material pannelli_info_02/SOLID/TEX/scheda_piazza_porta_ravegnana.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.164706 0.568628 0.874510
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture scheda_piazza_porta_ravegnana.jpg
+			}
+		}
+	}
+}
+material ed3_int_05/SOLID/TEX/muffa_torri.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed6_base_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed2_legno_pilastri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.380392 0.239216 0.125490
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material asinelli_nicchia/SOLID/TEX/lightmap
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.266667 0.733333 0.203922
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture lightmap
+			}
+		}
+	}
+}
+material ed45_legno_pilastri/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.533333 0.325490 0.090196
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material garisenda_casatorre/SOLID/TEX/porta_casatorre.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.486274
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+}
+material asinelli_nicchia/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.266667 0.733333 0.203922
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}
+material ed45_casatorre/SOLID/TEX/porta_casatorre.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.000000 0.486274
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+}
+material ed6_sottotetto/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed7_base_pil_matt/SOLID/TEX/torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.631373 0.180392 0.074510
+			specular 0.166897 0.166897 0.166897 12.500000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed6bis_legno_pilastri/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.819608 0.525490 0.333333
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material pannelli_info_03/SOLID/TEX/scheda_palazzo_strazzaroli.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.152941 0.172549 0.725490
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture scheda_palazzo_strazzaroli.jpg
+			}
+		}
+	}
+}
+material ed45_int_02/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.870588 0.474510 0.258824
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed6_sottotetto/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6bis_sottotetto/SOLID/TEX/tavolato2.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture tavolato2.jpg
+			}
+		}
+	}
+}
+material ed2_int_02/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.830957 0.900363 0.917022
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed7_sottotetto/SOLID/TEX/legno_travi.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.178604 0.607875 1.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6_finestra_dav/ALPHA/TEX/finestra_davanzale.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.607843 0.847059 0.278431
+			specular 0.000000 0.000000 0.000000 1.250000
+			scene_blend alpha_blend 
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6bis_int_05/SOLID/TEX/muffa_torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.137255 0.494118 0.341176
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed6_sottotetto/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed45_finestra_acu/SOLID/TEX/finestra_sesto_acuto.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.847059 0.541177 0.090196
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed3_pavimento_mattoni/SOLID/TEX/torri.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed6bis_sottotetto/SOLID/TEX/travetti.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.370000 0.560000 0.610000
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material ed45_base_pil_pietra/SOLID/TEX/pietra_01.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.560784 0.560784 0.560784
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed7_finestra_ret/SOLID/TEX/finestra_rettangolare.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.011765 0.172549 0.286275
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material barile_ring/SOLID/TEX/metallo.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 0.792157 0.000000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture metallo.jpg
+			}
+		}
+	}
+}
+material ed6_int_05/SOLID/TEX/muffa_torri.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.137255 0.494118 0.341176
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed7_int_04/SOLID/TEX/muffa_intonaco.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.113891 0.905969 0.282344
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+			}
+		}
+	}
+}
+material ed3_legno_travetti/SOLID/TEX/travetti.jpg/VertCol
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture travetti.jpg
+			}
+		}
+	}
+}
+material garisenda_nicchia/SOLID/TEX/fori_pontai.jpg
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.266667 0.733333 0.203922
+			specular 0.000000 0.000000 0.000000 1.250000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+			}
+		}
+	}
+}

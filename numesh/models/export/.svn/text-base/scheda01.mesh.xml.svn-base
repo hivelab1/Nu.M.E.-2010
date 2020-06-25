@@ -1,0 +1,160 @@
+<mesh>
+	<submeshes>
+		<submesh material="pannelli_info_lat" usesharedvertices="false">
+			<faces count="8">
+				<face v1="0" v2="1" v3="2"/>
+				<face v1="0" v2="2" v3="3"/>
+				<face v1="4" v2="5" v3="6"/>
+				<face v1="4" v2="6" v3="7"/>
+				<face v1="8" v2="9" v3="10"/>
+				<face v1="8" v2="10" v3="11"/>
+				<face v1="12" v2="13" v3="15"/>
+				<face v1="13" v2="14" v3="15"/>
+			</faces>
+			<geometry vertexcount="16">
+				<vertexbuffer positions="true" normals="true" texture_coords="1">
+					<vertex>
+						<position x="0.043660" y="-3.560018" z="-2.687641"/>
+						<normal x="0.000000" y="-1.000000" z="0.000000"/>
+						<texcoord u="0.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="-3.560018" z="2.690776"/>
+						<normal x="0.000000" y="-1.000000" z="0.000000"/>
+						<texcoord u="1.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="-0.002796" y="-3.560018" z="2.686071"/>
+						<normal x="0.000000" y="-1.000000" z="0.000000"/>
+						<texcoord u="1.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="-3.560018" z="-2.692348"/>
+						<normal x="0.000000" y="-1.000000" z="0.000000"/>
+						<texcoord u="0.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.043660" y="1.818440" z="-2.687640"/>
+						<normal x="0.000000" y="1.000000" z="0.000000"/>
+						<texcoord u="0.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="1.818440" z="-2.692347"/>
+						<normal x="0.000000" y="1.000000" z="0.000000"/>
+						<texcoord u="1.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="-0.002796" y="1.818440" z="2.686070"/>
+						<normal x="0.000000" y="1.000000" z="0.000000"/>
+						<texcoord u="1.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="1.818440" z="2.690778"/>
+						<normal x="0.000000" y="1.000000" z="0.000000"/>
+						<texcoord u="0.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="-3.560018" z="2.690776"/>
+						<normal x="-0.180901" y="-0.000000" z="0.983501"/>
+						<texcoord u="0.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="1.818440" z="2.690778"/>
+						<normal x="-0.180901" y="-0.000000" z="0.983501"/>
+						<texcoord u="1.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="-0.002796" y="1.818440" z="2.686070"/>
+						<normal x="-0.180901" y="-0.000000" z="0.983501"/>
+						<texcoord u="1.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="-0.002796" y="-3.560018" z="2.686071"/>
+						<normal x="-0.180901" y="-0.000000" z="0.983501"/>
+						<texcoord u="0.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.043660" y="1.818440" z="-2.687640"/>
+						<normal x="0.180857" y="0.000000" z="-0.983509"/>
+						<texcoord u="0.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.043660" y="-3.560018" z="-2.687641"/>
+						<normal x="0.180857" y="0.000000" z="-0.983509"/>
+						<texcoord u="1.000000" v="1.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="-3.560018" z="-2.692348"/>
+						<normal x="0.180857" y="0.000000" z="-0.983509"/>
+						<texcoord u="1.000000" v="0.000000"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="1.818440" z="-2.692347"/>
+						<normal x="0.180857" y="0.000000" z="-0.983509"/>
+						<texcoord u="0.000000" v="0.000000"/>
+					</vertex>
+				</vertexbuffer>
+			</geometry>
+		</submesh>
+		<submesh material="pannelli_info_01" usesharedvertices="false">
+			<faces count="2">
+				<face v1="0" v2="1" v3="3"/>
+				<face v1="1" v2="2" v3="3"/>
+			</faces>
+			<geometry vertexcount="4">
+				<vertexbuffer positions="true" normals="true" texture_coords="1">
+					<vertex>
+						<position x="0.043660" y="-3.560018" z="-2.687641"/>
+						<normal x="0.999992" y="-0.000000" z="0.003879"/>
+						<texcoord u="1.000602" v="0.998790"/>
+					</vertex>
+					<vertex>
+						<position x="0.043660" y="1.818440" z="-2.687640"/>
+						<normal x="0.999992" y="-0.000000" z="0.003879"/>
+						<texcoord u="0.999397" v="-0.001208"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="1.818440" z="2.690778"/>
+						<normal x="0.999992" y="-0.000000" z="0.003879"/>
+						<texcoord u="-0.000602" v="0.001210"/>
+					</vertex>
+					<vertex>
+						<position x="0.022799" y="-3.560018" z="2.690776"/>
+						<normal x="0.999992" y="-0.000000" z="0.003879"/>
+						<texcoord u="0.000603" v="1.001208"/>
+					</vertex>
+				</vertexbuffer>
+			</geometry>
+		</submesh>
+		<submesh material="pannelli_info_02" usesharedvertices="false">
+			<faces count="2">
+				<face v1="0" v2="1" v3="2"/>
+				<face v1="0" v2="2" v3="3"/>
+			</faces>
+			<geometry vertexcount="4">
+				<vertexbuffer positions="true" normals="true" texture_coords="1">
+					<vertex>
+						<position x="-0.002796" y="-3.560018" z="2.686071"/>
+						<normal x="-0.999992" y="-0.000000" z="-0.003879"/>
+						<texcoord u="0.999916" v="1.000149"/>
+					</vertex>
+					<vertex>
+						<position x="-0.002796" y="1.818440" z="2.686070"/>
+						<normal x="-0.999992" y="-0.000000" z="-0.003879"/>
+						<texcoord u="1.000084" v="0.000149"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="1.818440" z="-2.692347"/>
+						<normal x="-0.999992" y="-0.000000" z="-0.003879"/>
+						<texcoord u="0.000084" v="-0.000149"/>
+					</vertex>
+					<vertex>
+						<position x="0.018065" y="-3.560018" z="-2.692348"/>
+						<normal x="-0.999992" y="-0.000000" z="-0.003879"/>
+						<texcoord u="-0.000084" v="0.999851"/>
+					</vertex>
+				</vertexbuffer>
+			</geometry>
+		</submesh>
+	</submeshes>
+</mesh>

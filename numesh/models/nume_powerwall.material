@@ -1,0 +1,7861 @@
+material ed45_base_pil_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed3_selciato
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material garisenda_base
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture garisenda_base_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_base.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture garisenda_base_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_base.jpg
+			}
+		}
+	}
+}
+material cappelletta_ferro
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.715294 0.404706 0.047059 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture ferro.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_finestra_ret
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material ed7_int_05
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.414118 0.570980 0.414118 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_int_04
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.091113 0.724775 0.225875 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.776467 0.142883 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_portone
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed7_int_01
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.553017 0.085780 0.646465 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.233153 0.067072 0.727030 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_int_02
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.335686 0.630588 0.699608 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture portone_scrostato.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.276078 0.542745 0.599216 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_fori_pontai
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.000000 0.000000 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_int_05
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.109804 0.395294 0.272941 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material carretto_rad
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.100392 0.467451 0.178824 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture carretto.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material asinelli_mattoni
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.658824 0.078431 0.078431 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_asinelli.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_base_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed7_finestra_acuto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.536471 0.351373 0.075294 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material cappelletta_marmo
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture marmo.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed2_bronzo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture campanile_bronzo_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture campanile_bronzo_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+}
+material ed3_finestra_acuto
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material mezzeria
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.301176 0.087843 0.677647 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture pavimento.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material garisenda_pietra
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.533333 0.517647 0.517647 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture pietra_01.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_int_04
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.091113 0.724775 0.225875 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_int_01
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.553017 0.085780 0.646465 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_int_02
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.696471 0.379608 0.207059 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.762353 0.586667 0.000000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed2_base_pil_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed6_tegole_rilievo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed6bis_finestra_acuto
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material mattoni_pavimenta
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pavimento.png
+			}
+		}
+	}
+}
+material ed45_portone
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed45_portone_imp
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material garisenda_mattoni
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed3_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.715294 0.103529 0.401569 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material cappelletta_croce
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.589804 0.687059 0.122353 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture croce.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_int_02
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.530196 0.618039 0.439216 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_finestra_ret
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material asinelli_nicchia
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.213333 0.586667 0.163137 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material ed6_fori_pontai
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.000000 0.000000 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material garisenda_casatorre
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture porta_casatorre_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture porta_casatorre_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+}
+material asinelli_fori_pontai
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.000000 0.000000 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material barile_brett
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.307451 0.583529 0.605490 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture barile.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_finestra_dav
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material garisenda_fori_pontai
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.000000 0.000000 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_base_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed3_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.142883 0.486300 0.800000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_tegole_rilievo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed6bis_acqua_aposa
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.028235 0.291765 0.690196 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture acqua_aposa.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_int_04
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.649412 0.329412 0.178824 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.276078 0.542745 0.599216 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_finestra_dav
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed3_bronzo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture campanile_bronzo_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture campanile_bronzo_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture campanile_bronzo.jpg
+			}
+		}
+	}
+}
+material ed7_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.142883 0.486300 0.800000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture tavolato2.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_finestra_acuto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.677647 0.432941 0.072157 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material barile_top
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.536471 0.053333 0.053333 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture barile.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed2_int_02
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.664765 0.720290 0.733618 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed2_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.233153 0.067072 0.727030 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed2_int_01
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.304833 0.377600 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_pavimento_mattoni
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed2_tegole_rilievo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed6_mattoni_torri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material cappelletta_mattoni
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.564706 0.062745 0.062745 1.000000
+			specular 0.166897 0.166897 0.166897 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_portone
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.709020 0.633726 0.633726 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material ed2_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed7_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material barile_ring
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.633725 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture metallo.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material carretto_stangen_smal
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.294902 0.094118 0.094118 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture carretto.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material asinelli_sele_la
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture base_asinelli_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture base_asinelli.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture base_asinelli_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture base_asinelli.png
+			}
+		}
+	}
+}
+material ed6bis_tegole_ril
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed3_base_pil_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed2_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.408000 0.608000 0.512000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture tavolato2.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material carretto_stangen
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.178824 0.062745 0.621176 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture carretto.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_int_05
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.109804 0.395294 0.272941 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_finestra_dav
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed45_casatorre
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.000000 0.389019 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material ed6_base_pietra
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material ed6bis_portone_imp
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material garisenda_lato
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture garisenda_sele_lato_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_sele_lato.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture garisenda_sele_lato_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_sele_lato.jpg
+			}
+		}
+	}
+}
+material ed6_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.776467 0.142883 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_portone
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed7_finestra_ret
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_rettangolare_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_rettangolare.png
+			}
+		}
+	}
+}
+material ed45_torre
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_asinelli.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_asinelli.jpg
+			}
+		}
+	}
+}
+material ed6bis_casatorre
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture porta_casatorre_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture porta_casatorre_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture porta_casatorre.png
+			}
+		}
+	}
+}
+material ed7_portone_imp
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_importante_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_importante.png
+			}
+		}
+	}
+}
+material ed45_finestra_acu
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_sesto_acuto_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_sesto_acuto.png
+			}
+		}
+	}
+}
+material ed2_finestra_dav
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture finestra_davanzale_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture finestra_davanzale.png
+			}
+		}
+	}
+}
+material ed6bis_fori_pontai
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.000000 0.000000 0.000000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture fori_pontai.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material garisenda_nicchia
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.213333 0.586667 0.163137 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material ed3_tegole_rilievo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material ed6_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.296000 0.448000 0.488000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed6bis_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.776467 0.142883 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed6bis_mattoni_torri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture muffa_torri.jpg
+			}
+		}
+	}
+}
+material ed2_portone
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture portone_scrostato_n.png
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture portone_scrostato.png
+			}
+		}
+	}
+}
+material ed2_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.062745 0.285490 0.705882 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture tavolato2.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_finestra_dav
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.486274 0.677647 0.222745 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture finestra_davanzale.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material asinelli_cornice
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture garisenda_cornice_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture garisenda_cornice_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+}
+material asinelli_blocchi_piet
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture pietra_01_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture pietra_01.jpg
+			}
+		}
+	}
+}
+material asinelli_sele_porta
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture base_asinelli_porta.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture base_asinelli_porta.png
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture base_asinelli_porta.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture base_asinelli_porta.png
+			}
+		}
+	}
+}
+material garisenda_porta
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture garisenda_porta_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_porta.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture garisenda_porta_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_porta.jpg
+			}
+		}
+	}
+}
+material ed45_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.142883 0.486300 0.800000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture tavolato2.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed7_base_pil_matt
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture torri_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture torri.jpg
+			}
+		}
+	}
+}
+material ed6bis_sottotetto
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.296000 0.448000 0.488000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture portone_importante.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_int_01
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.025098 0.730980 0.323137 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_cornicioni.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_int_03
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.696471 0.649412 0.257255 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture stillicidio.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_int_02
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.721569 0.445490 0.464314 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_int_05
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.523922 0.611765 0.436078 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_torri.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_int_04
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.009412 0.138039 0.229020 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 1.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture muffa_intonaco.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed45_legno_travetti
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.776467 0.142883 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture travetti.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material ed3_legno_pilastri
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material cappelletta_legno
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture legno_travi_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture legno_travi.jpg
+			}
+		}
+	}
+}
+material ed45_tegole_rilievo
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture tegole_pulite_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture tegole_pulite.jpg
+			}
+		}
+	}
+}
+material garisenda_cornice
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVPSpecular
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			fragment_program_ref Examples/BumpMapFPSpecular
+			{
+				param_named_auto lightDiffuse light_diffuse_colour 0 
+				param_named_auto lightSpecular light_specular_colour 0
+			}
+			texture_unit
+			{
+				texture garisenda_cornice_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 2
+				tex_address_mode clamp
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+		pass
+		{
+			ambient 0 0 0 
+			iteration once_per_light
+			scene_blend add
+			vertex_program_ref Examples/BumpMapVP
+			{
+				param_named_auto lightPosition light_position_object_space 0
+				param_named_auto eyePosition camera_position_object_space
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+			texture_unit
+			{
+				texture garisenda_cornice_n.tga
+				colour_op replace
+			}
+			texture_unit
+			{
+				cubic_texture nm.png combinedUVW
+				tex_coord_set 1
+				tex_address_mode clamp
+				colour_op_ex dotproduct src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+		pass
+		{
+			lighting off
+			vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named ambient float4 1 1 1 1
+			}
+			scene_blend dest_colour zero
+			texture_unit
+			{
+				texture garisenda_cornice.jpg
+			}
+		}
+	}
+}
